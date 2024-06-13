@@ -1,0 +1,108 @@
+R Tidyverse Applications
+Load Data
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just readxl package
+install.packages("readxl")
+```
+
+```{r}
+#load readxl package
+library(readxl)
+```
+
+```{r}
+#view sales data Excel sheet names
+excel_sheets("KinetEco Sales.xlsx")
+```
+
+```{r}
+#load in sales data from Excel file by sheet name
+sales <- read_excel("KinetEco Sales.xlsx", sheet= "Sales")
+sales
+```
+
+```{r}
+#load in sales reps data from Excel file by sheet number
+sales_reps <- read_excel("KinetEco Sales.xlsx", sheet= 2)
+sales_reps
+```
+
+```{r}
+#load in sales data from Excel file by using read_xlsx
+sales_reps <- read_xlsx("KinetEco Sales.xlsx", sheet= 2)
+sales_reps
+```
+
+```{r}
+#load in sales reps data from Excel file and set column types
+sales_reps <- read_excel("KinetEco Sales.xlsx", sheet=2, col_types= c("numeric", "text", "text", "text", "date"))
+sales_reps
+```
+
+```{r}
+#load in sales data from Excel file with first 5 columns
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1, range=cell_cols(1:5))
+sales
+```
+
+```{r}
+#load in sales data from Excel file with first 4 rows
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1, range=cell_rows(1:5))
+sales
+```
+
+```{r}
+#load in sales data from Excel file with no header
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1, col_names=FALSE)
+sales
+```
+
+```{r}
+#load in sales reps data from Excel file and set column names and types
+sales_reps <- read_excel("KinetEco Sales.xlsx", sheet=2, col_names = c("a","b","c","d","e"), col_types= c("numeric", "text", "text", "text", "date"))
+sales_reps
+```
+
+```{r}
+#load in sales reps data from Excel file and skip top 10 rows
+sales_reps <- read_excel("KinetEco Sales.xlsx", sheet=2, skip=10)
+sales_reps
+```
+
+```{r}
+#load in first 10 rows of sales reps data from Excel file and set column names and types
+sales_reps <- read_excel("KinetEco Sales.xlsx", sheet=2, n_max=10)
+sales_reps
+```
+
+```{r}
+#load in sales reps data from Excel file and replace Central East values with NA
+sales_reps <- read_excel("KinetEco Sales.xlsx", sheet=2, na="Central East")
+sales_reps
+```
+
+```{r}
+#install writexl package
+install.packages("writexl")
+```
+
+```{r}
+#load writexl package
+library(writexl)
+```
+
+```{r}
+#write sales reps data to Excel file
+write_xlsx(sales_reps, "KinetEco Sales Reps Updated.xlsx")
+```

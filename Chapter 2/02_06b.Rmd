@@ -1,0 +1,90 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just lubridate package
+
+```
+
+```{r}
+#load lubridate package
+
+```
+
+```{r}
+#Get current date
+
+```
+
+```{r}
+#Get current date and time
+
+```
+
+```{r}
+#Get date-time
+
+```
+
+```{r}
+#Get date
+
+```
+
+```{r}
+#Get time
+
+```
+
+```{r}
+#Convert value to date-time
+
+```
+
+```{r}
+#Parse date-time
+
+```
+
+```{r}
+#Get date from decimal
+
+```
+
+```{r}
+#Get decimal from date
+
+```
+
+```{r}
+#Get current time zone
+
+```
+
+```{r}
+#Get list of all valid time zones
+
+```
+
+```{r}
+#Convert time zone
+
+```

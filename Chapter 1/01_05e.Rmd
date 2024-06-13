@@ -1,0 +1,60 @@
+R Tidyverse Applications
+Load Data
+
+```{r}
+#install tidyverse packages
+install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just tibble package
+install.packages("tibble")
+```
+
+```{r}
+#load tibble package
+library(tibble)
+```
+
+```{r}
+#create tibble
+tibble(x = 1:5, y = c("apple", "banana", "pear", "peach", "strawberry"))
+```
+
+```{r}
+#create tibble row-by-row
+tribble(~x, ~y,
+        1, "apple",
+        2, "banana",
+        3, "pear",
+        4, "peach",
+        5, "strawberry")
+```
+
+```{r}
+#create dataframe
+data <- data.frame(x = 1:5, y= c("apple", "banana", "pear", "peach", "strawberry"))
+data
+```
+
+```{r}
+#convert to tibble
+as_tibble(data)
+```
+
+```{r}
+#save converted dataframe to tibble variable
+new_tibble <- as_tibble(data)
+new_tibble
+```
+
+```{r}
+#check if variables are tibbles or not
+is_tibble(data)
+is_tibble(new_tibble)
+```

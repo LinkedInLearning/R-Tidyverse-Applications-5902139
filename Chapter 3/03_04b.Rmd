@@ -1,0 +1,68 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just purrr package
+install.packages("purrr")
+```
+
+```{r}
+#load purrr package
+library(purrr)
+```
+
+```{r}
+#Map  output for column classes
+
+```
+
+```{r}
+#Map integer output for number of distinct values in each column
+
+```
+
+```{r}
+#Map columns into dataframe with distinct values and classes
+
+```
+
+```{r}
+#Great function to add 25 charge
+
+```
+
+
+```{r}
+#Map double output for adding 25 to Order Total column
+
+```
+
+```{r}
+#Get maximum value between Price and Order Total columns
+
+```
+
+```{r}
+#Map all columns to paste together
+
+```
+

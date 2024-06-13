@@ -1,0 +1,59 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(tidyr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Unite ProdNumber and ProdName columns
+
+```
+
+```{r}
+#Split EmpName column into first and last name
+
+```
+
+```{r}
+#Split Product column by expanding data
+
+```
+
+```{r}
+#Expand ProdCategory column to view all values
+
+```
+
+```{r}
+#View all possible OrderType and CustType combinations
+
+```
+
+```{r}
+#Pivot data wider by OrderType and Order Total
+
+```
+
+```{r}
+#Create order_type_quantity tibble
+order_type_quantity <- tibble(ProdCategory = c("Batteries", "EV charger", "Grid Tie Inverters", "Landscape lighting", "Lightbulbs", "Solar panels", "Wind harvester"),
+                              Retail = c(1332, 32, 112,3971, 3626, 2104,202),
+                              Wholesale = c(542, 13, 246, 167, 629, 998, 177))
+order_type_quantity
+```
+
+```{r}
+#Pivot data longer by ProdCategory
+
+```
+
+```{r}
+#Pivot data longer by ProdCategory version 2
+
+```

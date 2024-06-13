@@ -1,0 +1,51 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(readr)
+library(dplyr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+products <- read_csv("KinetEco Products.csv")
+individual_customer <- read_excel("KinetEco Customer.xlsx", sheet= 1)
+business_customer <- read_excel("KinetEco Customer.xlsx", sheet= 2)
+sales_reps <- read_xlsx("KinetEco Sales.xlsx", sheet= 2)
+sales
+products
+individual_customer
+business_customer
+sales_reps
+```
+
+```{r}
+#Bind customer data together
+customers <- bind_rows(individual_customer, business_customer)
+customers
+```
+
+```{r}
+#Make left join with sales and sales_reps tibbles
+left_join(sales, sales_reps, by="EmpID")
+```
+
+```{r}
+#Make inner join with sales and customers tibbles
+inner_join(sales, customers, by=c("CustID" = "Customer ID"))
+```
+
+```{r}
+#Make full outer join with sales and products tibbles
+full_join(sales, products, by=c("ProdNumber" = "Product ID"))
+```
+
+```{r}
+#Make filtered join with sales and products tibbles with matching data
+sales %>% semi_join(products, by = join_by(Price))
+```
+
+```{r}
+#Make filtered join with sales and products tibbles where data doesn't match
+sales %>% anti_join(products, by = join_by(Price))
+```

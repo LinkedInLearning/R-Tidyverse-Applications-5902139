@@ -1,0 +1,87 @@
+R Tidyverse Applications
+Load Data
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just readr package
+
+```
+
+```{r}
+#load readr package
+
+```
+
+```{r}
+#load in product data from csv file
+
+```
+
+```{r}
+#gather column specifications
+
+```
+
+```{r}
+#load in product data from csv file with specified factor column type
+
+```
+
+```{r}
+#gather new column specifications
+
+```
+
+```{r}
+#load in product data from csv file with specified column types
+
+```
+
+```{r}
+#load in product data from csv file and hide column specification message
+
+```
+
+```{r}
+#load in product data from csv file with selected columns
+
+```
+
+```{r}
+#load in product data from csv file with no header
+
+```
+
+```{r}
+#load in product data from csv file providing column headers
+
+```
+
+```{r}
+#load in product data from csv file skipping first 10 rows
+
+```
+
+```{r}
+#load in first 10 rows of product data from csv file
+
+```
+
+```{r}
+#load in product data from csv file with Personal values read as na
+
+```
+
+```{r}
+#write product data to csv file
+
+```

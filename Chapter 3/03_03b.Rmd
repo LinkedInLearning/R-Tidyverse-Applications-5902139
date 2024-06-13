@@ -1,0 +1,91 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(forcats)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales$CustType <- factor(sales$CustType)
+sales$OrderType <- factor(sales$OrderType)
+sales$EmpTitle <- factor(sales$EmpTitle)
+sales$SalesReg <- factor(sales$SalesReg)
+sales
+```
+
+```{r}
+#Get levels of OrderType factor column
+levels(sales$OrderType)
+```
+
+```{r}
+#Manually change order of levels of OrderType factor column
+
+```
+
+```{r}
+#Get levels of SalesReg factor column
+levels(sales$SalesReg)
+```
+
+```{r}
+#Change order of levels by frequency of SalesReg factor column
+
+```
+
+```{r}
+#Change order of levels by order of appearance of SalesReg factor column
+
+```
+
+```{r}
+#Reverse order of levels of SalesReg factor column
+
+```
+
+```{r}
+#Shift order of levels of SalesReg factor column
+
+```
+
+```{r}
+#Shuffle order of levels of SalesReg factor column
+
+```
+
+```{r}
+#Change order of levels of SalesReg factor column by another column
+
+```
+
+```{r}
+#Get levels of CustType factor column
+levels(sales$CustType)
+```
+
+```{r}
+#Manually change level values of CustType factor column
+
+```
+
+```{r}
+#Get levels of EmpTitle factor column
+levels(sales$EmpTitle)
+```
+
+```{r}
+#Collapse level values of EmpTitle factor column
+
+```
+
+```{r}
+#Collapse level values of EmpTitle factor column into "Other"
+
+```
+
+```{r}
+#Create numeric level values of EmpTitle factor column
+
+```
+

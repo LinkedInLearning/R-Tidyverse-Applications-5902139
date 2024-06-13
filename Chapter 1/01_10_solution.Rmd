@@ -1,0 +1,24 @@
+R Tidyverse Applications
+Load Data
+
+```{r}
+#load readxl package
+library(readxl)
+```
+
+```{r}
+#view customer data Excel sheet names
+excel_sheets("KinetEco Customer.xlsx")
+```
+
+```{r}
+#load in first 50 rows of Business customer data from Excel file by sheet name
+business_customer <- read_excel("KinetEco Customer.xlsx", sheet= "Business", n_max=50)
+business_customer
+```
+
+```{r}
+#load in Individual customer data from Excel file by sheet number for columns CustomerType to SalesRegion, skipping the first 25 rows of data
+individual_customer <- read_excel("KinetEco Customer.xlsx", sheet= 1, range=cell_cols(2:6), skip=25)
+individual_customer
+```

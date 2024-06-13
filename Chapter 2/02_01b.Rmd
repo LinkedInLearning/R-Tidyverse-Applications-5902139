@@ -1,0 +1,66 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+#load in customer data from Excel file by sheet number
+customer <- read_excel("KinetEco Customer.xlsx", sheet= 1)
+customer
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just tidyr package
+
+```
+
+```{r}
+#load tidyr package
+
+```
+
+
+```{r}
+#Find any null values in customer tibble
+
+```
+
+```{r}
+#Sum all null values in customer tibble
+
+```
+
+```{r}
+#Sum all null values in customer tibble by column
+
+```
+
+```{r}
+#Fill SalesRegion null data in down direction
+
+```
+
+```{r}
+#Replace CustomerType null data with Individual
+
+```
+
+```{r}
+#Delete rows of data where CustomerName is null
+
+```
+
+```{r}
+#Sum all null values in customer tibble
+
+```

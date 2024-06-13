@@ -1,0 +1,58 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+#load in sales data from Excel file by sheet number
+sales_regions <- read_excel("KinetEco Sales.xlsx", sheet= 3)
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales_regions
+sales
+```
+
+```{r}
+#Arrange sales data by Quantity ascending
+sales %>% arrange(Quantity)
+```
+
+```{r}
+#Arrange sales data by Quantity descending
+sales %>% arrange(desc(Quantity))
+```
+
+```{r}
+#Add row of data to sales_regions
+sales_regions %>% add_row(State= "Puerto Rico", Region= "Southeast")
+```
+
+```{r}
+#Rename Region column name in sales_regions
+sales_regions %>% rename(SalesRegion = Region)
+```
+
+```{r}
+#Use mutate to gather NewPrice sales column
+sales %>% mutate(NewPrice = `Order Total`/Quantity)
+```
+
+```{r}
+#Use mutate to gather EmployeeType sales column
+sales %>% mutate(EmployeeType = if_else(str_detect(EmpTitle, "Associate"), "Associate", "Representative"))
+```
+
+```{r}
+#Use mutate to get average Order Total as new column
+sales %>% mutate(MeanTotal = mean(`Order Total`))
+```
+
+```{r}
+#Use mutate to get cumulative sum of Quantity as new column
+sales %>% mutate(QuantitySum = cumsum(Quantity))
+```
+
+```{r}
+#Use mutate to gather get percentage rank of Order Total as new column
+sales %>% mutate(OrderRank = percent_rank(`Order Total`))
+```

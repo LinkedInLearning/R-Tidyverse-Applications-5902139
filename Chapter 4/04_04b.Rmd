@@ -1,0 +1,80 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+library(stringr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+customers <- read_excel("KinetEco Customer.xlsx", sheet= 1)
+sales
+customers
+```
+
+```{r}
+#Filter sales data for orders that had 5 or more in Quantity
+
+```
+
+```{r}
+#Filter sales data for Sales Regions that only start with Central
+
+```
+
+```{r}
+#Filter sales data for values only above the mean of Price
+  
+```
+
+```{r}
+#Filter sales data for values only above the mean of Price, grouped by Product Category
+ 
+```
+
+```{r}
+#Pull distinct customer names from sales data
+
+```
+
+```{r}
+#Slice sales dataset from index values 26 to 100
+
+```
+
+```{r}
+#Get bottom 5% of orders based on order total
+
+```
+
+```{r}
+#Get top 5% of orders based on order total
+
+```
+
+```{r}
+#Get first 20 values in dataset
+
+```
+
+```{r}
+#Sample 20 random customers
+
+```
+
+```{r}
+#Pull CustomerName column as vector
+
+```
+
+```{r}
+#Select CustomerID, CustomerName, and CustomerState columns as table
+
+```
+
+```{r}
+#Relocate CustomerType column after CustomerState column
+
+```
+

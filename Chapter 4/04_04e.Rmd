@@ -1,0 +1,80 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+library(stringr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+customers <- read_excel("KinetEco Customer.xlsx", sheet= 1)
+sales
+customers
+```
+
+```{r}
+#Filter sales data for orders that had 5 or more in Quantity
+sales %>% filter(Quantity >= 5)
+```
+
+```{r}
+#Filter sales data for Sales Regions that only start with Central
+sales %>% filter(str_starts(sales$SalesReg, "Central")) 
+```
+
+```{r}
+#Filter sales data for values only above the mean of Price
+sales %>% filter(Price > mean(Price, na.rm= TRUE))  
+```
+
+```{r}
+#Filter sales data for values only above the mean of Price, grouped by Product Category
+sales %>% group_by(ProdCategory) %>% filter(Price > mean(Price, na.rm= TRUE))  
+```
+
+```{r}
+#Pull distinct customer names from sales data
+sales %>% distinct(CustName)
+```
+
+```{r}
+#Slice sales dataset from index values 26 to 100
+sales %>% slice(26:100)
+```
+
+```{r}
+#Get bottom 5% of orders based on order total
+sales %>% slice_min(`Order Total`, prop= 0.05)
+```
+
+```{r}
+#Get top 5% of orders based on order total
+sales %>% slice_max(`Order Total`, prop= 0.05)
+```
+
+```{r}
+#Get first 20 values in dataset
+customers %>% slice_head(n=20)
+```
+
+```{r}
+#Sample 20 random customers
+customers %>% slice_sample(n=20)
+```
+
+```{r}
+#Pull CustomerName column as vector
+customers %>% pull(CustomerName)
+```
+
+```{r}
+#Select CustomerID, CustomerName, and CustomerState columns as table
+customers %>% select(`Customer ID`, CustomerName, CustomerState)
+```
+
+```{r}
+#Relocate CustomerType column after CustomerState column
+customers %>% relocate(CustomerType, .after = CustomerState)
+```
+

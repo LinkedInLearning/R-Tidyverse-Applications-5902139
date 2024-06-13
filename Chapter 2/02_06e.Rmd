@@ -1,0 +1,85 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just lubridate package
+install.packages("lubridate")
+```
+
+```{r}
+#load lubridate package
+library(lubridate)
+```
+
+```{r}
+#Get current date
+today()
+```
+
+```{r}
+#Get current date and time
+now()
+```
+
+```{r}
+#Get date-time
+as_datetime(1234567890)
+```
+
+```{r}
+#Get date
+as_date(12345)
+```
+
+```{r}
+#Get time
+hms::as_hms(12345)
+```
+
+```{r}
+#Convert value to date-time
+ymd_hms("2025-05-01 13:05:00")
+class(ymd_hms("2025-05-01 13:05:00"))
+```
+
+```{r}
+#Parse date-time
+parse_date_time("2024-05-01", "ymd")
+class(parse_date_time("2024-05-01", "ymd"))
+```
+
+```{r}
+#Get date from decimal
+date_decimal(2024.7)
+```
+
+```{r}
+#Get decimal from date
+decimal_date(ydm("2024-04-05"))
+```
+
+```{r}
+#Get current time zone
+Sys.timezone()
+```
+
+```{r}
+#Get list of all valid time zones
+OlsonNames()
+```
+
+```{r}
+#Convert time zone
+x <- ymd_hms("2024-09-27 12:30:01", tz = "US/Pacific")
+with_tz(x, "US/Eastern")
+```

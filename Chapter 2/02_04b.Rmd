@@ -1,0 +1,82 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(stringr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Detect Price in CustName column
+
+```
+
+```{r}
+#Sum number of times Price shows in CustName column
+
+```
+
+```{r}
+#Return where Price occurs in CustName column
+
+```
+
+```{r}
+#Extract where Price occurs in CustName column
+
+```
+
+```{r}
+#Match where Price occurs in EmpTitle column
+
+```
+
+```{r}
+#Detect if Central string starts in SalesReg column
+
+```
+
+```{r}
+#Detect if 250 string ends in ProdName column
+
+```
+
+```{r}
+#Detect where Sales string occurs in EmpTitle column
+
+```
+
+```{r}
+#Count how many times 3 occurs in OrderNum column
+
+```
+
+```{r}
+#Index OrderNum column for index position 4 onwards
+
+```
+
+```{r}
+#Get string length of ProdName column
+
+```
+
+```{r}
+#Pad ProdName column
+
+```
+
+```{r}
+#Trim ProdName column
+
+```
+
+```{r}
+#Truncate ProdName column
+
+```
+

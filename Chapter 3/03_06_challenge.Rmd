@@ -1,0 +1,37 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(forcats)
+#load in customers data from Excel file by sheet number
+customers <- read_excel("KinetEco Customer.xlsx", sheet= 1)
+customers
+```
+
+```{r}
+#Factor CustomerState column and exclude District of Columbia
+
+```
+
+```{r}
+#Get levels of CustomerState factor column
+
+```
+
+```{r}
+#Add Maine and Vermont levels to CustomerState column and check levels again
+
+```
+
+```{r}
+#Change order of levels by frequency of CustomerState factor column and check levels again
+
+```
+
+```{r}
+#Get count of values for each level in CustomerState factor column
+
+```
+

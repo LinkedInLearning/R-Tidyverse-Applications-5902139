@@ -1,0 +1,56 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(lubridate)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Add ReviewDate column
+
+```
+
+```{r}
+#Get OrderDate year
+
+```
+
+```{r}
+#Get OrderDate month
+
+```
+
+```{r}
+#Get OrderDate week
+
+```
+
+```{r}
+#Get OrderDate day
+
+```
+
+```{r}
+#Get OrderDate floor month
+
+```
+
+```{r}
+#Get OrderDate ceiling month
+
+```
+
+```{r}
+#Round OrderDate by week
+
+```
+
+```{r}
+#Roll back OrderDate to last day of previous month
+
+```

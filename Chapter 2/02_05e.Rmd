@@ -1,0 +1,49 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(stringr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Combine ProdNumber and ProdName columns
+sales$Product <- str_c(sales$ProdNumber, sales$ProdName, sep= ": ")
+sales
+```
+
+```{r}
+#Flatten Quantity column
+str_flatten(sales$Quantity, "-")
+```
+
+```{r}
+#Flatten Quantity column with commas
+str_flatten_comma(sales$Quantity)
+```
+
+```{r}
+#Duplicate ProdNumber column
+sales$ProdNumber <- str_dup(sales$ProdNumber,2)
+sales
+```
+
+```{r}
+#Split CustName column
+str_split(sales$CustName, " ")
+```
+
+```{r}
+#Split CustName column
+str_split_fixed(sales$CustName, " ", 2)
+```
+
+```{r}
+#Glue SalesReg and CustState columns together
+sales$RegionState <- sales %>% str_glue_data("{SalesReg} - {CustState}")
+sales
+```

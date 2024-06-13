@@ -1,0 +1,65 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just dplyr package
+
+```
+
+```{r}
+#load dplyr package
+
+```
+
+```{r}
+#Get average Order Total
+
+```
+
+```{r}
+#Get first and last Price values
+
+```
+
+```{r}
+#Get minimum and maximum Price values
+
+```
+
+```{r}
+#Get standard deviation and interquartile range of quantity
+
+```
+
+```{r}
+#Get number of rows in data and number of unique product categories
+
+```
+
+```{r}
+#Get distinct values across all columns
+
+```
+
+```{r}
+#Count number of occurrences for each customer state
+
+```

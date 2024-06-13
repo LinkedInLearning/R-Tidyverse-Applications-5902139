@@ -1,0 +1,55 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Get number of values for each Sales Region
+sales %>% group_by(SalesReg) %>% tally()
+```
+
+```{r}
+#Get total quantity by product category
+sales %>% group_by(ProdCategory) %>% summarize(TotalQuantity= sum(Quantity))
+```
+
+```{r}
+#Get average order total and quantity by product category
+sales %>% group_by(ProdCategory)  %>%
+          summarize(AverageTotal = mean(`Order Total`), AverageQuantity = mean(Quantity))
+```
+
+```{r}
+#Get average and sum of order total by order type
+sales %>% group_by(OrderType)  %>%
+          summarize(AverageTotal = mean(`Order Total`), Total = sum(`Order Total`))
+```
+
+```{r}
+#Get average and sum of order total by order type and product category
+grouped_data <- sales %>% group_by(OrderType, ProdCategory)  %>%
+          summarize(AverageTotal = mean(`Order Total`), Total = sum(`Order Total`), .groups= "drop")
+```
+
+```{r}
+#Print grouped data
+grouped_data
+```
+
+```{r}
+#Sum quantity and discount
+sales %>% summarize(QuantityDiscount = sum(c(Quantity, Discount)))
+```
+
+```{r}
+#Sum quantity and discount by row
+sales %>% rowwise() %>% summarize(QuantityDiscount = sum(c(Quantity, Discount)))
+```
+

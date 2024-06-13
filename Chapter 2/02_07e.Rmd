@@ -1,0 +1,65 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(lubridate)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Add ReviewDate column
+sales$ReviewDate <- ymd("2024-05-01")
+sales
+```
+
+```{r}
+#Get OrderDate year
+sales$OrderYear <- year(sales$OrderDate)
+sales
+```
+
+```{r}
+#Get OrderDate month
+sales$OrderMonth <- month(sales$OrderDate)
+sales
+```
+
+```{r}
+#Get OrderDate week
+sales$OrderWeek <- week(sales$OrderDate)
+sales
+```
+
+```{r}
+#Get OrderDate day
+sales$OrderDay <- day(sales$OrderDate)
+sales
+```
+
+```{r}
+#Get OrderDate floor month
+sales$OrderDateFloor <- floor_date(sales$OrderDate, "month")
+sales
+```
+
+```{r}
+#Get OrderDate ceiling month
+sales$OrderDateCeiling <- ceiling_date(sales$OrderDate, "month")
+sales
+```
+
+```{r}
+#Round OrderDate by week
+sales$OrderDateRound <- round_date(sales$OrderDate, "week")
+sales
+```
+
+```{r}
+#Roll back OrderDate to last day of previous month
+sales$OrderDateRollBack <- rollback(sales$OrderDate)
+sales
+```

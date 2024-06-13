@@ -1,0 +1,65 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just dplyr package
+install.packages("dplyr")
+```
+
+```{r}
+#load dplyr package
+library(dplyr)
+```
+
+```{r}
+#Get average Order Total
+sales %>% summarize(AverageOrder = mean(`Order Total`))
+```
+
+```{r}
+#Get first and last Price values
+sales %>% summarize(FirstPrice = first(Price), LastPrice = last(Price))
+```
+
+```{r}
+#Get minimum and maximum Price values
+sales %>% summarize(MinPrice = min(Price), MaxPrice = max(Price))
+```
+
+```{r}
+#Get standard deviation and interquartile range of quantity
+sales %>% summarize(TotalDev = sd(Quantity), TotalIQR = IQR(Quantity))
+```
+
+```{r}
+#Get number of rows in data and number of unique product categories
+sales %>% summarize(Rows = n(), UniqueCategories = n_distinct(ProdCategory))
+```
+
+```{r}
+#Get distinct values across all columns
+sales %>% summarize(across(everything(), n_distinct))
+```
+
+```{r}
+#Count number of occurrences for each customer state
+sales %>% count(CustState)
+```

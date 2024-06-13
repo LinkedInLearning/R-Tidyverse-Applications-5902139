@@ -1,0 +1,104 @@
+R Tidyverse Applications
+Load Data
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just readr package
+install.packages("readr")
+```
+
+```{r}
+#load readr package
+library(readr)
+```
+
+```{r}
+#load in product data from csv file
+products <- read_csv("KinetEco Products.csv")
+products
+```
+
+```{r}
+#gather column specifications
+spec(products)
+```
+
+```{r}
+#load in product data from csv file with specified factor column type
+products <- read_csv("KinetEco Products.csv",
+                     col_types = cols(
+                       `Product ID` = col_character(),
+                       `Product category` = col_character(),
+                       Item = col_character(),
+                       Price = col_double(),
+                       `Target Customer` = col_factor(levels= c("Corporate", "Corporate & Personal", "Personal"))
+                       ))
+products
+```
+
+```{r}
+#gather new column specifications
+spec(products)
+```
+
+```{r}
+#load in product data from csv file with specified column types
+products <- read_csv("KinetEco Products.csv", col_types ="cccdf")
+products
+```
+
+```{r}
+#load in product data from csv file and hide column specification message
+products <- read_csv("KinetEco Products.csv", show_col_types=FALSE)
+products
+```
+
+```{r}
+#load in product data from csv file with selected columns
+products <- read_csv("KinetEco Products.csv", col_select= c("Product ID", "Item", "Price"))
+products
+```
+
+```{r}
+#load in product data from csv file with no header
+products <- read_csv("KinetEco Products.csv", col_names=FALSE)
+products
+```
+
+```{r}
+#load in product data from csv file providing column headers
+products <- read_csv("KinetEco Products.csv", col_names=c("a","b","c","d","e"))
+products
+```
+
+```{r}
+#load in product data from csv file skipping first 10 rows
+products <- read_csv("KinetEco Products.csv", skip=10)
+products
+```
+
+```{r}
+#load in first 10 rows of product data from csv file
+products <- read_csv("KinetEco Products.csv", n_max=10)
+products
+```
+
+```{r}
+#load in product data from csv file with Personal values read as na
+products <- read_csv("KinetEco Products.csv", na="Personal")
+products
+```
+
+```{r}
+#write product data to csv file
+write_csv(products, "KinetEco Products Updated.csv")
+```

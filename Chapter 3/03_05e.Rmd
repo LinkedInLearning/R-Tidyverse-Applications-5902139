@@ -1,0 +1,78 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readr)
+library(purrr)
+#load in sales data from Excel file by sheet number
+products <- read_csv("KinetEco Products.csv")
+products
+```
+
+```{r}
+#Keep numeric columns only
+products %>% keep(is.numeric)
+```
+
+```{r}
+#Get rid of numeric columns only
+products %>% discard(is.numeric)
+```
+
+```{r}
+#Get head while columns are characters
+products %>% head_while(is.character)
+```
+
+```{r}
+#Create is.even function
+is.even <- function(x) x %% 2 == 0
+```
+
+```{r}
+#Detect first occurrence of even Price
+products$Price %>% detect(is.even)
+```
+
+```{r}
+#Detect if every Price is even
+products$Price %>% every(is.even)
+```
+
+```{r}
+#Detect if some of Price is even
+products$Price %>% some(is.even)
+```
+
+```{r}
+#Detect if none of Price is even
+products$Price %>% none(is.even)
+```
+
+```{r}
+#Modify price to increase by 10
+products$Price <- modify(products$Price, ~.+10)
+products
+```
+
+```{r}
+#Modify columns to factor if character, otherwise as double
+modify_if(products, is.character, as.factor,.else = as.double)
+```
+
+```{r}
+#Reduce Price column to mean of all values
+reduce(products$Price, mean)
+```
+
+```{r}
+#Combine Product ID and Item columns into one long vector
+list_c(list(products$"Product ID", products$Item))
+```
+
+```{r}
+#Flatten Product ID and Item columns into two vectors
+list_flatten(list(products$"Product ID", products$Item))
+```
+

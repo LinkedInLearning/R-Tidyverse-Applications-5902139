@@ -1,0 +1,59 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(forcats)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales$CustType <- factor(sales$CustType)
+sales$OrderType <- factor(sales$OrderType)
+sales$EmpTitle <- factor(sales$EmpTitle)
+sales$SalesReg <- factor(sales$SalesReg)
+sales
+```
+
+```{r}
+#Get levels of SalesReg factor column
+levels(sales$SalesReg)
+```
+
+```{r}
+#Get unique values and associated levels for SalesReg
+fct_unique(sales$SalesReg)
+```
+
+```{r}
+#Get count of values for each level in EmpTitle factor column
+fct_count(sales$EmpTitle)
+```
+
+```{r}
+#Check where Business level matches in CustType
+fct_match(sales$CustType, "Business")
+```
+
+```{r}
+#Sum where Business level matches in CustType
+sum(fct_match(sales$CustType, "Business"))
+```
+
+```{r}
+#Add level to OrderType column
+sales$OrderType <- fct_expand(sales$OrderType, "Online")
+levels(sales$OrderType)
+sales
+```
+
+```{r}
+#Drop unused level(s) from OrderType column
+sales$OrderType <- fct_drop(sales$OrderType)
+levels(sales$OrderType)
+sales
+```
+
+```{r}
+#Combine factor levels
+fct_c(sales$OrderType, sales$CustType)
+```

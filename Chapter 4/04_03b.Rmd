@@ -1,0 +1,58 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+#load in sales data from Excel file by sheet number
+sales_regions <- read_excel("KinetEco Sales.xlsx", sheet= 3)
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales_regions
+sales
+```
+
+```{r}
+#Arrange sales data by Quantity ascending
+
+```
+
+```{r}
+#Arrange sales data by Quantity descending
+
+```
+
+```{r}
+#Add row of data to sales_regions
+
+```
+
+```{r}
+#Rename Region column name in sales_regions
+
+```
+
+```{r}
+#Use mutate to gather NewPrice sales column
+
+```
+
+```{r}
+#Use mutate to gather EmployeeType sales column
+
+```
+
+```{r}
+#Use mutate to get average Order Total as new column
+
+```
+
+```{r}
+#Use mutate to get cumulative sum of Quantity as new column
+
+```
+
+```{r}
+#Use mutate to gather get percentage rank of Order Total as new column
+
+```

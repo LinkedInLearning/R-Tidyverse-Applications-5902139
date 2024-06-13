@@ -1,0 +1,46 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(stringr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Combine ProdNumber and ProdName columns
+
+```
+
+```{r}
+#Flatten Quantity column
+
+```
+
+```{r}
+#Flatten Quantity column with commas
+
+```
+
+```{r}
+#Duplicate ProdNumber column
+
+```
+
+```{r}
+#Split CustName column
+
+```
+
+```{r}
+#Split CustName column
+
+```
+
+```{r}
+#Glue SalesReg and CustState columns together
+
+```

@@ -1,0 +1,39 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(tidyverse)
+#load in sales reps data from Excel file by sheet number
+sales_reps <- read_excel("KinetEco Sales.xlsx", sheet= 2)
+sales_reps
+```
+
+```{r}
+#Expand Region column to view all unique values
+
+```
+
+```{r}
+#Remove Central string from Region column
+
+```
+
+
+```{r}
+#Index EmpID column for index position 5 onwards
+
+```
+
+```{r}
+#Combine EmpID and Employee Name columns together and add a dash and space between them
+
+```
+
+```{r}
+#Get the year of Start Date
+
+```
+
+
+

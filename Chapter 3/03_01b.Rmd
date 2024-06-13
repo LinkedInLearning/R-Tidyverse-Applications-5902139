@@ -1,0 +1,56 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just forcats package
+
+```
+
+```{r}
+#load forcats package
+
+```
+
+```{r}
+#Create factor from scratch
+
+```
+
+```{r}
+#Convert OrderType column to factor
+
+```
+
+```{r}
+#Convert EmpTitle column to factor with excluding value
+
+```
+
+```{r}
+#Convert CustType column to factor with different labels
+
+```
+
+```{r}
+#Convert SalesReg column to factor using as_factor
+
+```
+

@@ -1,0 +1,86 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(stringr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Detect Price in CustName column
+str_detect(sales$CustName, "Price")
+```
+
+```{r}
+#Sum number of times Price shows in CustName column
+sum(str_detect(sales$CustName, "Price"))
+```
+
+```{r}
+#Return where Price occurs in CustName column
+str_subset(sales$CustName, "Price")
+```
+
+```{r}
+#Extract where Price occurs in CustName column
+str_extract(sales$CustName, "Price")
+```
+
+```{r}
+#Match where Price occurs in EmpTitle column
+str_match(sales$CustName, "Price")
+```
+
+```{r}
+#Detect if Central string starts in SalesReg column
+str_starts(sales$SalesReg, "Central")
+```
+
+```{r}
+#Detect if 250 string ends in ProdName column
+str_ends(sales$ProdName, "250")
+```
+
+```{r}
+#Detect where Sales string occurs in EmpTitle column
+str_locate(sales$EmpTitle, "Sales")
+```
+
+```{r}
+#Count how many times 3 occurs in OrderNum column
+str_count(sales$OrderNum, "3")
+```
+
+```{r}
+#Index OrderNum column for index position 4 onwards
+sales$OrderNum <- str_sub(sales$OrderNum, 4)
+sales
+```
+
+```{r}
+#Get string length of ProdName column
+str_length(sales$ProdName)
+```
+
+```{r}
+#Pad ProdName column
+sales$ProdName <- sales$ProdName  %>% str_pad(20, "right")
+sales$ProdName
+```
+
+```{r}
+#Trim ProdName column
+sales$ProdName <- sales$ProdName %>% str_trim()
+sales$ProdName
+```
+
+```{r}
+#Truncate ProdName column
+sales$ProdName <- sales$ProdName  %>% str_trunc(10)
+sales$ProdName
+```
+

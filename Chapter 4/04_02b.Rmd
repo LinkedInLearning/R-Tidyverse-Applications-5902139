@@ -1,0 +1,57 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Get number of values for each Sales Region
+
+```
+
+```{r}
+#Get total quantity by product category
+
+```
+
+```{r}
+#Get average order total and quantity by product category
+
+```
+
+```{r}
+#Get average and sum of order total by order type
+
+```
+
+```{r}
+#Get average and sum of order total by order type and product category
+
+```
+
+```{r}
+#Print grouped data
+
+```
+
+```{r}
+#Get variables being grouped on
+
+```
+
+```{r}
+#Sum quantity and discount
+
+```
+
+```{r}
+#Sum quantity and discount by row
+
+```
+

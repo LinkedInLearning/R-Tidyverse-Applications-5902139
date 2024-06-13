@@ -1,0 +1,46 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just ggplot2 package
+install.packages("ggplot2")
+```
+
+```{r}
+#load ggplot2 package
+library(ggplot2)
+```
+
+```{r}
+#Make bar plot for Quantity
+ggplot(sales, aes(x=Quantity)) + geom_bar(color = 'black', fill='red')
+```
+
+```{r}
+#Make density plot for Order Total with filter
+sales %>% filter(`Order Total` < 1000) %>% ggplot(aes(x=`Order Total`)) + geom_density(color = 'purple', linetype= 'dotted', size=2)
+```
+
+```{r}
+#Make box plot for Price with filter
+sales %>% filter(Price < 100) %>% ggplot(aes(x=Price)) + geom_boxplot(color ='black', fill = 'blue', outlier.fill= 'red', outlier.shape= 23, outlier.size=5)
+```

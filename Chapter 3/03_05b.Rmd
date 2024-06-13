@@ -1,0 +1,77 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readr)
+library(purrr)
+#load in sales data from Excel file by sheet number
+products <- read_csv("KinetEco Products.csv")
+products
+```
+
+```{r}
+#Keep numeric columns only
+
+```
+
+```{r}
+#Get rid of numeric columns only
+
+```
+
+```{r}
+#Get head while columns are characters
+
+```
+
+```{r}
+#Create is.even function
+
+```
+
+```{r}
+#Detect first occurrence of even Price
+
+```
+
+```{r}
+#Detect if every Price is even
+
+```
+
+```{r}
+#Detect if some of Price is even
+
+```
+
+```{r}
+#Detect if none of Price is even
+
+```
+
+```{r}
+#Modify price to increase by 10
+
+```
+
+```{r}
+#Modify columns to factor if character, otherwise as double
+
+```
+
+```{r}
+#Reduce Price column to mean of all values
+
+```
+
+```{r}
+#Combine Product ID and Item columns into one long vector
+
+```
+
+```{r}
+#Flatten Product ID and Item columns into two vectors
+
+```
+

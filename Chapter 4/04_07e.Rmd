@@ -1,0 +1,42 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+library(ggplot2)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#Get point plot for Price and Order Total
+ggplot(sales, aes(x=Price, y=`Order Total`)) + geom_point(color= 'red', shape=8, size=2)
+```
+
+```{r}
+#Get counting point plot for Quantity and Discount
+ggplot(sales, aes(x=Quantity, y=Discount)) + geom_count(alpha=0.7, fill= 'green', shape=22)
+```
+
+```{r}
+#Get area plot for Price and Quantity with filter
+sales %>% filter(Price < 100) %>% ggplot(aes(x=Price, y=Quantity)) + geom_area(color= 'black', fill='blue', linetype='longdash', size=0.5)
+```
+
+```{r fig.width=10, fig.height=8}
+#Get bar plot for ProdCategory and Order Total
+ggplot(sales, aes(x=ProdCategory, y=`Order Total`)) + geom_col(fill= 'orange', size=2)
+```
+
+```{r fig.width=10, fig.height=8}
+#Get box plot for SalesReg and Quantity columns
+ggplot(sales, aes(x=SalesReg, y=Quantity)) + geom_boxplot(color ='black', fill = 'cyan', outlier.color= 'red', outlier.shape= 4, outlier.size=4)
+```
+
+```{r fig.width=10, fig.height=8}
+#Get discrete count plot for SalesReg and ProdCategory columns
+ggplot(sales, aes(x=SalesReg, y=ProdCategory)) + geom_count(alpha= 0.5, color ='purple', stroke = 2)
+```

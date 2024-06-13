@@ -1,0 +1,70 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+library(dplyr)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just purrr package
+install.packages("purrr")
+```
+
+```{r}
+#load purrr package
+library(purrr)
+```
+
+```{r}
+#Map output for column classes
+sales %>% map(class)
+```
+
+```{r}
+#Map integer output for number of distinct values in each column
+sales %>% map_int(n_distinct)
+```
+
+```{r}
+#Map columns into dataframe with distinct values and classes
+sales %>% map_df(~(data.frame(n_distinct = n_distinct(.x),
+                    class = class(.x))), .id = "column")
+```
+
+```{r}
+#Great function to add 25 charge
+add25 <- function(.x) {return(.x + 25)}
+```
+
+
+```{r}
+#Map double output for adding 25 to Order Total column
+sales$"Order Total" <- map_dbl(sales$"Order Total", add25)
+sales
+```
+
+```{r}
+#Get maximum value between Price and Order Total columns
+sales %>% mutate(max = map2_dbl(Price, `Order Total`, max))
+```
+
+```{r}
+#Map all columns to paste together
+pmap(sales, paste)
+```
+

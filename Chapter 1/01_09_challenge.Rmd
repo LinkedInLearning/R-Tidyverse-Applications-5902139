@@ -1,0 +1,22 @@
+R Tidyverse Applications
+Load Data
+
+```{r}
+#load readxl package
+
+```
+
+```{r}
+#view customer data Excel sheet names
+
+```
+
+```{r}
+#load in first 50 rows of Business customer data from Excel file by sheet name
+
+```
+
+```{r}
+#load in Individual customer data from Excel file by sheet number for columns CustomerType to SalesRegion, skipping the first 25 rows of data
+
+```

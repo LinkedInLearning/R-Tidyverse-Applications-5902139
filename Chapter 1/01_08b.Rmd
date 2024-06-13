@@ -1,0 +1,97 @@
+R Tidyverse Applications
+Load Data
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just readxl package
+
+```
+
+```{r}
+#load readxl package
+
+```
+
+```{r}
+#view sales data Excel sheet names
+
+```
+
+```{r}
+#load in sales data from Excel file by sheet name
+
+```
+
+```{r}
+#load in sales reps data from Excel file by sheet number
+
+```
+
+```{r}
+#load in sales data from Excel file by using read_xlsx
+
+```
+
+```{r}
+#load in sales reps data from Excel file and set column types
+
+```
+
+```{r}
+#load in sales data from Excel file with first 5 columns
+
+```
+
+```{r}
+#load in sales data from Excel file with first 4 rows
+
+```
+
+```{r}
+#load in sales data from Excel file with no header
+
+```
+
+```{r}
+#load in sales reps data from Excel file and set column names and types
+
+```
+
+```{r}
+#load in sales reps data from Excel file and skip top 10 rows
+
+```
+
+```{r}
+#load in first 10 rows of sales reps data from Excel file and set column names and types
+
+```
+
+```{r}
+#load in sales reps data from Excel file and replace Central East values with NA
+
+```
+
+```{r}
+#install writexl package
+
+```
+
+```{r}
+#load writexl package
+
+```
+
+```{r}
+#write sales reps data to Excel file
+
+```

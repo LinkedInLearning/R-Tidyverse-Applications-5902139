@@ -1,0 +1,72 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+#load in customer data from Excel file by sheet number
+customer <- read_excel("KinetEco Customer.xlsx", sheet= 1)
+customer
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just tidyr package
+install.packages("tidyr")
+```
+
+```{r}
+#load tidyr package
+library(tidyr)
+```
+
+
+```{r}
+#Find any null values in customer tibble
+is.na(customer)
+```
+
+```{r}
+#Sum all null values in customer tibble
+sum(is.na(customer))
+```
+
+```{r}
+#Sum all null values in customer tibble by column
+colSums(is.na(customer))
+```
+
+```{r}
+#Fill SalesRegion null data in down direction
+customer <- customer %>% fill(SalesRegion, .direction="down")
+sum(is.na(customer$SalesRegion))
+customer
+```
+
+```{r}
+#Replace CustomerType null data with Individual
+customer$CustomerType <- customer$CustomerType %>% replace_na("Individual")
+sum(is.na(customer$CustomerType))
+customer
+```
+
+```{r}
+#Delete rows of data where CustomerName is null
+customer <- customer %>% drop_na(CustomerName)
+sum(is.na(customer$CustomerName))
+customer
+```
+
+```{r}
+#Sum all null values in customer tibble
+sum(is.na(customer))
+```

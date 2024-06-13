@@ -1,0 +1,34 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readr)
+library(dplyr)
+library(ggplot2)
+#load in products data from Excel file by sheet number
+products <- read_csv("KinetEco Products.csv")
+products
+```
+
+```{r}
+#Get median and variance of Price
+products %>% summarize(MedianPrice = median(Price), VarPrice = var(Price))
+```
+
+```{r}
+#Group Target Customer and Product category to get average and maximum of Price column
+products %>% group_by(`Target Customer`, `Product category`)  %>%
+          summarize(AveragePrice = mean(Price), MaxPrice = max(Price), .groups= 'drop')
+```
+
+```{r}
+#Use mutate to update Target Customer Column
+products <- products %>% mutate(`Target Customer` = if_else(str_detect(`Target Customer`, "Corporate"), "Corporate", "Personal"))
+products
+```
+
+```{r}
+#Get bar plot for Target Customer and Price with filter
+products %>% filter(Price > 25) %>% ggplot(aes(x=`Target Customer`, y=Price)) + geom_col(fill= 'blue', size=3)
+```

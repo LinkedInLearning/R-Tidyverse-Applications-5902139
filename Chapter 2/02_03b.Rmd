@@ -1,0 +1,61 @@
+R Tidyverse Applications
+Manipulate Data
+
+```{r}
+#RUN FIRST
+library(readxl)
+#load in sales data from Excel file by sheet number
+sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
+sales
+```
+
+```{r}
+#install tidyverse packages
+#install.packages("tidyverse")
+```
+
+```{r}
+#load all tidyverse packages
+#library(tidyverse)
+```
+
+```{r}
+#install just stringr package
+
+```
+
+```{r}
+#load stringr package
+
+```
+
+```{r}
+#Get subset of OrderNum column
+
+```
+
+```{r}
+#Replace Wholesale string values with B2B in OrderType using replace
+
+```
+
+```{r}
+#Replace a string values with 0 in SalesReg
+
+```
+
+```{r}
+#Uppercase SalesReg column
+
+```
+
+```{r}
+#Lowercase ProdCategory column
+
+```
+
+```{r}
+#Titlecase ProdName column
+
+```
+
