@@ -1,76 +1,76 @@
-Product ID,Item,Price
-KESP180,K-Eco 180,588.6
-KESP200,K-Eco 200,654
-KESP225,K-Eco 225,735.75
-KESP250,K-Eco 250,817.5
-KESP255,K-Eco 250x,869
-KESP275,K-Eco 275,899.25
-KESP300,K-Eco 300,981
-KESP325,K-Eco 325,1062.75
-KESP326,K-Eco 325x,1052.09
-KESP450,K-Eco 450,1471.5
-KESP575,K-Eco 575,1006.25
-KESP625,K-Eco 625,1430.63
-KESP700,K-Eco 700,2289
-KESP060,K-Eco Mini,89.99
-KESP001,K-Eco phone charger,44.89
-KIGT002,K-Invert 2K,1156
-KIGT004,K-Invert 4K,1430
-KIGT007,K-Invert 7K,1890
-KIGT009,K-Invert 9K,2430
-KIGT013,K-Invert 13K,3510
-KIGT020,K-Invert 20K,3600
-KEBA208,K-Eco AA  NiMH rechargeable batteries (8-pack),14.39
-KEBA212,K-Eco AA  NiMH rechargeable batteries (12-pack),21.59
-KEBA308,K-Eco  AAA NiMH rechargeable batteries  (8-pack),9.99
-KEBA312,K-Eco  AAA NiMH rechargeable batteries (12-pack),13.99
-KEBB012,K-Eco 12-volt Lithium-ion solar backup battery,5100
-KEBB018,K-Eco 18-volt Lithium-ion solar backup battery,5800
-KEBB036,K-Eco 36-volt Lithium-ion solar backup battery,8100
-KEBB048,K-Eco 48-volt Lithium-ion solar backup battery,13233
-KEWH005,K-Eco Breeze Mini,55
-KEWH100,K-Eco Blast 100,280
-KEWH200,K-Eco Blast 200,550
-KEWH400,K-Eco Blast 400,880
-KEWH401,K-Eco Blast 400x,1000.25
-KEWH600,K-Eco Blast 600,1025
-KEWH800,K-Eco Blast 800,1280
-KEWH120,K-Eco Blast 1200,2300
-KELB092,K-Eco Energy Bulbs 9W (2-pack),7.53
-KELB094,K-Eco Energy Bulbs 9W (4-pack),12.97
-KELB098,K-Eco Energy Bulbs 9W  (8-pack),22.99
-KELB123,K-Eco Energy Bulbs 13W (2-pack),8.5
-KELB134,K-Eco Energy Bulbs 13W (4-pack),15.99
-KELB138,K-Eco Energy Bulbs 13W  (8-pack),24.99
-KELB202,K-Eco Energy Bulbs 20W (2-pack),9.99
-KELB204,K-Eco Energy Bulbs 20W (4-pack),17.5
-KELB208,K-Eco Energy Bulbs 20W  (8-pack),28.7
-KELB232,K-Eco Energy Bulbs 23W (2-pack),11.39
-KELB234,K-Eco Energy Bulbs 23W (4-pack),18.99
-KELB238,K-Eco Energy Bulbs 23W  (8-pack),29.99
-KEPL001,K-Eco Solar path light,10
-KEPL004,K-Eco Solar path light  (4-pack),29.99
-KEPL008,K-Eco Solar path light  (8-pack),55.05
-KEPL012,K-Eco Solar path light  (12-pack),89.99
-KESL092,K-Eco Smart Bulbs 9W dimmable (2-pack),15.2
-KESL094,K-Eco Smart Bulbs 9W dimmable (4-pack),29.25
-KESL192,K-Eco Smart Bulbs 9W color change (2-pack),15.99
-KESL194,K-Eco Smart Bulbs 9W color change (4-pack),29.99
-KERL200,Smart Rope lights - Color changing,35
-KERL555,Rope lights - Multicolor,26.99
-KERL300,Rope lights - Red,26.99
-KERL100,Rope lights - White,26.99
-KERL400,Rope lights - Orange,26.99
-KERL500,Rope lights - Purple,26.99
-KERL600,Rope lights - Green,26.99
-KERL700,Rope lights - Blue,26.99
-KEBL040,Bistro String lights - 40 ft - white,27.99
-KEBL060,Bistro String lights - 60 ft - white,46.99
-KEBL100,Bistro String lights - 100 ft - white,65.99
-KECL040,Bistro String lights - 40 ft - Multicolor,45.5
-KECL060,Bistro String lights - 60 ft - Multicolor,59.99
-KECL100,Bistro String lights - 100 ft- Multicolor,89.99
-KESC100,Security lights,65.5
-KEEV002,Car charger - L2,1900
-KEWS004,Solar wall sconces (4pk),32.99
-KEWS008,Solar wall sconces (8pk),58.99
+Product ID,Product category,Item,Price,Target Customer
+KESP180,Solar panels,K-Eco 180,588.6,NA
+KESP200,Solar panels,K-Eco 200,654,NA
+KESP225,Solar panels,K-Eco 225,735.75,NA
+KESP250,Solar panels,K-Eco 250,817.5,NA
+KESP255,Solar panels,K-Eco 250x,869,NA
+KESP275,Solar panels,K-Eco 275,899.25,NA
+KESP300,Solar panels,K-Eco 300,981,Corporate & Personal
+KESP325,Solar panels,K-Eco 325,1062.75,Corporate & Personal
+KESP326,Solar panels,K-Eco 325x,1052.09,Corporate & Personal
+KESP450,Solar panels,K-Eco 450,1471.5,Corporate
+KESP575,Solar panels,K-Eco 575,1006.25,Corporate
+KESP625,Solar panels,K-Eco 625,1430.63,Corporate
+KESP700,Solar panels,K-Eco 700,2289,Corporate
+KESP060,Solar panels,K-Eco Mini,89.99,NA
+KESP001,Solar panels,K-Eco phone charger,44.89,NA
+KIGT002,Grid Tie Inverters,K-Invert 2K,1156,NA
+KIGT004,Grid Tie Inverters,K-Invert 4K,1430,NA
+KIGT007,Grid Tie Inverters,K-Invert 7K,1890,NA
+KIGT009,Grid Tie Inverters,K-Invert 9K,2430,Corporate & Personal
+KIGT013,Grid Tie Inverters,K-Invert 13K,3510,Corporate
+KIGT020,Grid Tie Inverters,K-Invert 20K,3600,Corporate
+KEBA208,Batteries,K-Eco AA  NiMH rechargeable batteries (8-pack),14.39,Corporate & Personal
+KEBA212,Batteries,K-Eco AA  NiMH rechargeable batteries (12-pack),21.59,Corporate & Personal
+KEBA308,Batteries,K-Eco  AAA NiMH rechargeable batteries  (8-pack),9.99,Corporate & Personal
+KEBA312,Batteries,K-Eco  AAA NiMH rechargeable batteries (12-pack),13.99,Corporate & Personal
+KEBB012,Batteries,K-Eco 12-volt Lithium-ion solar backup battery,5100,NA
+KEBB018,Batteries,K-Eco 18-volt Lithium-ion solar backup battery,5800,NA
+KEBB036,Batteries,K-Eco 36-volt Lithium-ion solar backup battery,8100,NA
+KEBB048,Batteries,K-Eco 48-volt Lithium-ion solar backup battery,13233,Corporate & Personal
+KEWH005,Wind harvester,K-Eco Breeze Mini,55,NA
+KEWH100,Wind harvester,K-Eco Blast 100,280,NA
+KEWH200,Wind harvester,K-Eco Blast 200,550,NA
+KEWH400,Wind harvester,K-Eco Blast 400,880,NA
+KEWH401,Wind harvester,K-Eco Blast 400x,1000.25,NA
+KEWH600,Wind harvester,K-Eco Blast 600,1025,Corporate & Personal
+KEWH800,Wind harvester,K-Eco Blast 800,1280,Corporate
+KEWH120,Wind harvester,K-Eco Blast 1200,2300,Corporate
+KELB092,Lightbulbs,K-Eco Energy Bulbs 9W (2-pack),7.53,Corporate & Personal
+KELB094,Lightbulbs,K-Eco Energy Bulbs 9W (4-pack),12.97,Corporate & Personal
+KELB098,Lightbulbs,K-Eco Energy Bulbs 9W  (8-pack),22.99,Corporate & Personal
+KELB123,Lightbulbs,K-Eco Energy Bulbs 13W (2-pack),8.5,Corporate & Personal
+KELB134,Lightbulbs,K-Eco Energy Bulbs 13W (4-pack),15.99,Corporate & Personal
+KELB138,Lightbulbs,K-Eco Energy Bulbs 13W  (8-pack),24.99,Corporate & Personal
+KELB202,Lightbulbs,K-Eco Energy Bulbs 20W (2-pack),9.99,Corporate & Personal
+KELB204,Lightbulbs,K-Eco Energy Bulbs 20W (4-pack),17.5,Corporate & Personal
+KELB208,Lightbulbs,K-Eco Energy Bulbs 20W  (8-pack),28.7,Corporate & Personal
+KELB232,Lightbulbs,K-Eco Energy Bulbs 23W (2-pack),11.39,Corporate & Personal
+KELB234,Lightbulbs,K-Eco Energy Bulbs 23W (4-pack),18.99,Corporate & Personal
+KELB238,Lightbulbs,K-Eco Energy Bulbs 23W  (8-pack),29.99,Corporate & Personal
+KEPL001,Landscape lighting,K-Eco Solar path light,10,NA
+KEPL004,Landscape lighting,K-Eco Solar path light  (4-pack),29.99,NA
+KEPL008,Landscape lighting,K-Eco Solar path light  (8-pack),55.05,NA
+KEPL012,Landscape lighting,K-Eco Solar path light  (12-pack),89.99,NA
+KESL092,Lightbulbs,K-Eco Smart Bulbs 9W dimmable (2-pack),15.2,Corporate & Personal
+KESL094,Lightbulbs,K-Eco Smart Bulbs 9W dimmable (4-pack),29.25,Corporate & Personal
+KESL192,Lightbulbs,K-Eco Smart Bulbs 9W color change (2-pack),15.99,NA
+KESL194,Lightbulbs,K-Eco Smart Bulbs 9W color change (4-pack),29.99,NA
+KERL200,Lightbulbs,Smart Rope lights - Color changing,35,NA
+KERL555,Landscape lighting,Rope lights - Multicolor,26.99,NA
+KERL300,Landscape lighting,Rope lights - Red,26.99,NA
+KERL100,Landscape lighting,Rope lights - White,26.99,NA
+KERL400,Landscape lighting,Rope lights - Orange,26.99,NA
+KERL500,Landscape lighting,Rope lights - Purple,26.99,NA
+KERL600,Landscape lighting,Rope lights - Green,26.99,NA
+KERL700,Landscape lighting,Rope lights - Blue,26.99,NA
+KEBL040,Landscape lighting,Bistro String lights - 40 ft - white,27.99,NA
+KEBL060,Landscape lighting,Bistro String lights - 60 ft - white,46.99,NA
+KEBL100,Landscape lighting,Bistro String lights - 100 ft - white,65.99,Corporate & Personal
+KECL040,Landscape lighting,Bistro String lights - 40 ft - Multicolor,45.5,NA
+KECL060,Landscape lighting,Bistro String lights - 60 ft - Multicolor,59.99,NA
+KECL100,Landscape lighting,Bistro String lights - 100 ft- Multicolor,89.99,NA
+KESC100,Landscape lighting,Security lights,65.5,Corporate & Personal
+KEEV002,EV charger,Car charger - L2,1900,Corporate & Personal
+KEWS004,Landscape lighting,Solar wall sconces (4pk),32.99,NA
+KEWS008,Landscape lighting,Solar wall sconces (8pk),58.99,NA
