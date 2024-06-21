@@ -22,12 +22,12 @@ sales
 
 ```{r}
 #install just purrr package
-install.packages("purrr")
+
 ```
 
 ```{r}
 #load purrr package
-library(purrr)
+
 ```
 
 ```{r}
