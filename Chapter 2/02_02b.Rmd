@@ -11,12 +11,12 @@ sales
 ```
 
 ```{r}
-#Unite ProdNumber and ProdName columns
+#Split EmpName column into first and last name
 
 ```
 
 ```{r}
-#Split EmpName column into first and last name
+#Unite ProdNumber and ProdName columns
 
 ```
 
