@@ -41,11 +41,6 @@ sales
 ```
 
 ```{r}
-#Get variables being grouped on
-
-```
-
-```{r}
 #Sum quantity and discount
 
 ```
