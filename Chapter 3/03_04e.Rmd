@@ -47,7 +47,7 @@ sales %>% map_df(~(data.frame(n_distinct = n_distinct(.x),
 ```
 
 ```{r}
-#Great function to add 25 charge
+#Create function to add 25 charge
 add25 <- function(.x) {return(.x + 25)}
 ```
 

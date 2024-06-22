@@ -46,7 +46,7 @@ sales
 ```
 
 ```{r}
-#Great function to add 25 charge
+#Create function to add 25 charge
 
 ```
 
