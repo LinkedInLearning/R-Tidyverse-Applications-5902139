@@ -9,7 +9,7 @@ All coding exercise files will have a beginning and an end state, for example '0
 Instructor
 Megan Silvey
 
-Data Science Consultant
+Data Scientist
 
 Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/megan-silvey?u=104).
 
