@@ -5,6 +5,7 @@ Manipulate Data
 #RUN FIRST
 library(readxl)
 library(dplyr)
+library(stringr)
 #load in sales data from Excel file by sheet number
 sales_regions <- read_excel("KinetEco Sales.xlsx", sheet= 3)
 sales <- read_excel("KinetEco Sales.xlsx", sheet= 1)
